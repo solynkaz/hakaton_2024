@@ -1,0 +1,31 @@
+:host {
+  display: flex;
+
+  .main {
+    width: 100%;
+
+    .main-header {
+      gap: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: var(--header-height);
+      padding: var(--header-padding);
+      box-shadow: 0 2px 4px 0 #bfc6d780;
+      position: relative;
+
+      &__portal-content {
+        width: 100%;
+        gap: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+      }
+
+      &__divider {
+        height: 25px;
+        align-self: center;
+      }
+    }
+  }
+}

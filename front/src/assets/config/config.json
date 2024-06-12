@@ -1,0 +1,14 @@
+{
+  "browserSettings": {
+    "favicon": "favicon.ico",
+    "title": "СМА"
+  },
+  "keycloak": {
+    "url": "https://keycloak2.apps.dh-dev.inlinegroup.ru",
+    "realm": "master",
+    "clientId": "client_sma"
+  },
+  "keycloakInitOptions": {
+    "checkLoginIframe": false
+  }
+}
