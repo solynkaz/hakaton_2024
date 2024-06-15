@@ -1,1 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+@import "@taiga-ui/core/styles/taiga-ui-local.less";
+// This goes into global, non-encapsulated styles
+[tuiWrapper][data-appearance="purple"] {
+  background: #8a52b2;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 450;
+  border-radius: 5px;
+
+  .wrapper-hover({
+    background: #7e4ca2;
+  });
+
+  .wrapper-active({
+    background: #8f75d1;
+  });
+
+  .wrapper-disabled({
+    background: #eaecee;
+  });
+}
+
+[tuiWrapper][data-appearance="ghost"] {
+  background: rgba(255, 255, 255, 0);
+  color: #000;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 450;
+  border-radius: 5px;
+
+  .wrapper-hover({
+    background: #e4e4e4;
+  });
+
+  .wrapper-disabled({
+    background: #eaecee;
+  });
+}
+
+[tuiWrapper][data-appearance="exit_button"] {
+  background: rgba(255, 255, 255, 0);
+  color: #8f75d1;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 450;
+  border-radius: 5px;
+
+  .wrapper-hover({
+    background: #e4e4e4;
+  });
+
+  .wrapper-disabled({
+    background: #eaecee;
+  });
+}

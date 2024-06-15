@@ -4,7 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b89b7e5-73c0-4f4c-b1e7-ec4553fb3fee" name="Changes" comment="init" />
+    <list default="true" id="3b89b7e5-73c0-4f4c-b1e7-ec4553fb3fee" name="Changes" comment="Front">
+      <change afterPath="$PROJECT_DIR$/front/src/app/modules/main-page/main-page.component.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/app/modules/vacancies/components/vacancy.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/app/modules/vacancies/components/vacancy.component.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/app/modules/vacancies/components/vacancy.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/app/modules/vacancies/schema/schema.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/app/modules/vacancies/vacancies.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/app/modules/vacancies/vacancies.component.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/app/modules/vacancies/vacancies.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/app/modules/vacancies/vacancies.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/app/services/auth-profile.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/app/services/auth-service.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/app/services/main-page-guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/assets/Roboto-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/assets/authorization-woman/woman-with-sticky-notes-her-copy-space_23-2148405232 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/assets/icons/html-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/assets/logo/landing-page.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/assets/logo/woman-auth.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/app-module.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/app-module.routing.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/interfaces/user-profile.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/interfaces/user-profile.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/layout/default-view/default-view.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/layout/default-view/default-view.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/layout/page/page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/layout/page/page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/modules/main-page/main-page.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/modules/main-page/main-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/modules/main-page/main-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/modules/main-page/main-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/modules/main-page/main-page.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/modules/main-page/main-page.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/modules/main-page/main-page.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/assets/logo/group.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/assets/logo/group_closed.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/less/styles.less" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/less/styles.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/proxy.conf.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/proxy.conf.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,35 +83,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/IdeaProjects/hakaton2024&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.start.executor&quot;: &quot;Run&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\user\\IdeaProjects\\hakaton2024\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\user\\IdeaProjects\\hakaton2024\\front\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/user/IdeaProjects/hakaton_2024/front",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "npm.start.executor": "Run",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\user\\IdeaProjects\\hakaton2024\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "ts.external.directory.path": "C:\\Users\\user\\AppData\\Local\\Programs\\IntelliJ IDEA Ultimate\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\IdeaProjects\hakaton_2024\front" />
+      <recent name="C:\Users\user\IdeaProjects\hakaton_2024" />
       <recent name="C:\Users\user\IdeaProjects\hakaton2024" />
       <recent name="C:\Users\user\IdeaProjects\hakaton2024\src\app\layout\page" />
       <recent name="C:\Users\user\IdeaProjects\hakaton2024\src\app" />
-      <recent name="C:\Users\user\IdeaProjects\hakaton2024\src" />
-      <recent name="C:\Users\user\IdeaProjects\hakaton2024\.vscode" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\IdeaProjects\hakaton2024\front" />
@@ -128,6 +166,7 @@
       <workItem from="1718162554428" duration="68000" />
       <workItem from="1718162653940" duration="778000" />
       <workItem from="1718456877533" duration="1011000" />
+      <workItem from="1718458085578" duration="2145000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -156,7 +195,8 @@
       <path value="$PROJECT_DIR$/backend" />
     </ignored-roots>
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="Front" />
+    <option name="LAST_COMMIT_MESSAGE" value="Front" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

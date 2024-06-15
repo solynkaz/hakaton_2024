@@ -1,0 +1,66 @@
+*{
+  font-family: Roboto;
+}
+.vacancies-topbar {
+  width: 100%;
+  height: fit-content;
+
+  &__menu {
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid #646880 1.5px;
+    *{
+      transition: all 0.2s;
+    }
+    &__element {
+      padding: 20px 77px;
+      font-size: 24px;
+    }
+
+    &__element:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__submenu {
+    display: flex;
+    height: 66px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-bottom: solid #EADAED 2px;
+    *{
+      transition: all 0.2s;
+    }
+
+    &__element {
+      padding: 8.5px 10px;
+      border-radius: 5px;
+    }
+    &__element:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__search {
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid #EADAED 6px;
+
+    &__field {
+      width: 500px;
+    }
+  }
+
+}
+.loader {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+

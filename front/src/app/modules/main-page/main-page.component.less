@@ -1,0 +1,96 @@
+*{
+  font-family: Roboto, sans-serif;
+}
+.main-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__buttons {
+    width: calc(100% - 70px);
+    margin-top: 50px;
+  }
+
+  .main-page-text {
+    font-size: 80px;
+    line-height: 100px;
+    font-weight: 900;
+  }
+
+  .main-page-subtext {
+    color: #646880;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 45px;
+  }
+}
+
+.custom-button {
+  width: 220px;
+  height: 60px !important;
+  float: right;
+  margin-right: 3px;
+}
+
+.button-submit {
+  margin-top: 25px;
+  height: 50px !important;
+  width: 267px;
+}
+
+
+.registration {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  .wrapper {
+    &_light {
+
+    }
+  }
+
+  .divider {
+    margin-left: 68px;
+    margin-right: 68px;
+    font-size: 32px;
+    font-weight: 300;
+    color: #646880
+
+  }
+
+  .image-container {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .form-buttons {
+    font-size: 32px;
+    font-weight: 500;
+    transition: all 0.4s;
+  }
+  .form-buttons:hover {
+    cursor: pointer;
+  }
+
+  .input-class {
+    width: 400px;
+  }
+
+  .input-label {
+    color: #646880;
+    font-size: 20px;
+    font-family: Roboto;
+    line-height: 20px;
+    margin-top:20px;
+  }
+
+  .input-label {
+    color:#646880;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+  }
+}

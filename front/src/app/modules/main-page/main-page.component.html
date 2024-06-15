@@ -1,1 +1,223 @@
-<p>main-page works!</p>
+<div class="main-page" *ngIf="!authorizing && !registration">
+  <div class="main-page__buttons">
+    <button
+      tuiButton
+      type="button"
+      class="custom-button"
+      size="l"
+      appearance="purple"
+      (click)="toggleRegistration()"
+    >
+      Регистрация
+    </button>
+    <button
+      tuiButton
+      type="button"
+      class="custom-button"
+      size="xl"
+      appearance="ghost"
+      (click)="toggleAuthorization()"
+    >
+      Войти
+    </button>
+  </div>
+
+  <div
+    style="
+      margin-bottom: 14px;
+      display: flex;
+      flex-direction: row;
+      margin-top: 140px;
+      margin-left: 140px;
+    "
+  >
+    <div style="display: flex; flex-direction: column; margin-top: -100px">
+      <span class="main-page-text"
+        >Приложение для<br />
+        соискателей <br />и рекрутеров
+      </span>
+      <span class="main-page-subtext">
+        для определения уровня ИТ-<br />специалистов и процессинга
+      </span>
+    </div>
+    <img
+      style="scale: 1.35; margin-left: 375px"
+      src="assets/logo/landing-page.png"
+    />
+  </div>
+</div>
+
+<div class="registration" *ngIf="authorizing || registration">
+  <div class="image-container">
+    <img
+      style="scale: 0.8; margin-left: 130px"
+      src="assets/logo/woman-auth.png"
+    />
+  </div>
+  <div
+    style="margin-right: 100px;
+    margin-top: 50px;
+}"
+  >
+    <div
+      style="
+        display: flex;
+        height: 38px;
+        width: 100%;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 5px;
+      "
+      [ngStyle]="
+        authorizing ? { 'margin-top': '265px' } : { 'margin-top': '68px' }
+      "
+    >
+      <span
+        [ngStyle]="authorizing ? { color: '#8a52b2' } : { color: '#646880' }"
+        class="form-buttons"
+        (click)="toggleAuthorization()"
+        >Вход</span
+      >
+      <span class="divider">|</span>
+      <span
+        [ngStyle]="registration ? { color: '#8a52b2' } : { color: '#646880' }"
+        class="form-buttons"
+        (click)="toggleRegistration()"
+        >Регистрация</span
+      >
+    </div>
+    <form [formGroup]="formGroup">
+      <div
+        *ngIf="registration"
+        style="
+          width: 100%;
+          flex-direction: column;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <label
+          [tuiTextfieldLabelOutside]="true"
+          class="input-label"
+          tuiLabel="Фамилия"
+        >
+          <tui-input class="input-class" formControlName="last_name">
+            <input tuiTextfield />
+          </tui-input>
+        </label>
+        <label
+          [tuiTextfieldLabelOutside]="true"
+          class="input-label"
+          tuiLabel="Имя"
+        >
+          <tui-input class="input-class" formControlName="first_name">
+            <input tuiTextfield />
+          </tui-input>
+        </label>
+
+        <label
+          [tuiTextfieldLabelOutside]="true"
+          class="input-label"
+          tuiLabel="Отчество"
+        >
+          <tui-input class="input-class" formControlName="middle_name">
+            <input tuiTextfield />
+          </tui-input>
+        </label>
+
+        <label
+          [tuiTextfieldLabelOutside]="true"
+          class="input-label"
+          tuiLabel="Почта"
+          class="wrapper wrapper_light input-label"
+        >
+          <tui-input class="input-class" formControlName="mail">
+            <input tuiTextfield type="email" />
+          </tui-input>
+        </label>
+
+        <label
+          [tuiTextfieldLabelOutside]="true"
+          class="input-label"
+          tuiLabel="Придумайте пароль"
+        >
+          <tui-input-password class="input-class" formControlName="pass">
+            <input tuiTextfield type="password" />
+          </tui-input-password>
+        </label>
+
+        <label
+          [tuiTextfieldLabelOutside]="true"
+          class="input-label"
+          tuiLabel="Повторите пароль"
+        >
+          <tui-input-password class="input-class" formControlName="pass_repeat">
+            <input tuiTextfield type="password" />
+          </tui-input-password>
+        </label>
+
+        <button
+          tuiButton
+          type="submit"
+          class="custom-button button-submit"
+          size="l"
+          appearance="purple"
+          [disabled]="formGroup.invalid"
+          (click)="submitUser()"
+        >
+          Зарегистрироваться
+        </button>
+      </div>
+
+      <div
+        *ngIf="authorizing"
+        style="
+          width: 100%;
+          flex-direction: column;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <label
+          [tuiTextfieldLabelOutside]="true"
+          class="input-label"
+          tuiLabel="Логин"
+        >
+          <tui-input class="input-class" formControlName="mail">
+            <input tuiTextfield />
+          </tui-input>
+        </label>
+        <label
+          [tuiTextfieldLabelOutside]="true"
+          class="input-label"
+          tuiLabel="Пароль"
+        >
+          <tui-input-password class="input-class" formControlName="pass">
+            <input tuiTextfield type="password" />
+          </tui-input-password>
+        </label>
+        <tui-loader
+          class="loader"
+          [inheritColor]="true"
+          [overlay]="true"
+          [showLoader]="isLoading"
+        >
+          <button
+            tuiButton
+            type="submit"
+            class="custom-button button-submit"
+            size="l"
+            appearance="purple"
+            [disabled]="formGroup.invalid"
+            (click)="submitUser()"
+          >
+            Войти
+          </button>
+        </tui-loader>
+      </div>
+    </form>
+  </div>
+</div>

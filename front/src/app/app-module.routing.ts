@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DefaultViewComponent } from './layout/default-view/default-view.component';
+import { AuthGuard } from './services/auth-service.guard';
+import { MainPageGuard } from './services/main-page-guard';
 
 const routes: Routes = [
   {
     path: '',
-    component: DefaultViewComponent,
     children: [
       {
         path: '',
@@ -21,6 +21,18 @@ const routes: Routes = [
         data: {
           breadcrumb: 'main-page',
         },
+        canActivate: [MainPageGuard],
+      },
+      {
+        path: 'vacancies',
+        loadChildren: () =>
+          import('./modules/vacancies/vacancies.module').then(
+            (m) => m.VacanciesModule
+          ),
+        data: {
+          breadcrumb: 'vacancies',
+        },
+        canActivate: [AuthGuard],
       },
     ],
   },

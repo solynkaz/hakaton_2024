@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MainPageComponent } from './main-page.component';
+import { VacanciesComponent } from './vacancies.component';
 import { RouterModule, Routes } from '@angular/router';
 import {
   TuiButtonModule,
   TuiErrorModule,
   TuiGroupModule,
   TuiHintModule,
-  TuiLabelModule, TuiLoaderModule,
+  TuiLabelModule,
+  TuiLoaderModule,
+  TuiScrollbarModule,
   TuiTextfieldControllerModule,
 } from '@taiga-ui/core';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -30,15 +32,16 @@ import {
   TuiCurrencyPipeModule,
   TuiMoneyModule,
 } from '@taiga-ui/addon-commerce';
+import { VacancyComponent } from './components/vacancy.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: MainPageComponent,
+    component: VacanciesComponent,
   },
 ];
 @NgModule({
-  declarations: [MainPageComponent],
+  declarations: [VacanciesComponent, VacancyComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
@@ -65,6 +68,7 @@ const routes: Routes = [
     TuiFieldErrorPipeModule,
     TuiCurrencyPipeModule,
     TuiLoaderModule,
+    TuiScrollbarModule,
   ],
 })
-export class MainPageModule {}
+export class VacanciesModule {}

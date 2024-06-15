@@ -1,5 +1,3 @@
-import { EPermission } from '../consts/permissions.consts';
-
 export interface IUserProfile {
   id: string;
   username?: string;
@@ -10,5 +8,4 @@ export interface IUserProfile {
   groups?: string[];
   groups_name?: string[];
   token?: string;
-  permissions?: EPermission[];
 }

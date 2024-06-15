@@ -1,0 +1,34 @@
+<div class="vacancies-content">
+  <div class="vacancy">
+    <div style="display: flex">
+      <img class="vacancy__img" src="assets/icons/html-icon.png" />
+      <div class="vacancy-data">
+        <span class="vacancy__title">{{ vacancy.vacancy_name }}</span>
+        <span class="vacancy__info">{{ vacancy.vacancy_profile }}</span>
+      </div>
+    </div>
+
+    <div class="vacancy-buttons">
+      <button
+        tuiButton
+        type="button"
+        class="vacancy-button"
+        appearance="outline"
+      >
+        Написать
+      </button>
+      <button
+        tuiIconButton
+        type="button"
+        style="margin-right: unset; margin-bottom: unset"
+        appearance="icon"
+        (click)="likeThisVacancy()"
+        class="vacancy-button tui-space_right-3 tui-space_bottom-3"
+        [icon]="isLiked ? tuiIconHeartFilledLarge : tuiIconHeartLarge"
+      ></button>
+    </div>
+  </div>
+  <span class="vacancy-description" [tuiHint]="vacancy.description">{{
+    vacancy.description
+  }}</span>
+</div>

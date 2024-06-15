@@ -1,16 +1,10 @@
 {
-  "/geoserver": {
-    "target": "http://10.7.27.66:8080",
+  "/backend": {
+    "target": "http://localhost:8000/api/",
     "secure": false,
-    "changeOrigin": false
-  },
-  "/gateway": {
-    "target": "https://sma-gateway.apps.dh-dev.inlinegroup.ru",
-    "secure": false,
-    "logLevel": "debug",
-    "changeOrigin": true,
+    "changeOrigin": false,
     "pathRewrite": {
-      "^/gateway": ""
+      "^/backend": ""
     }
   }
 }

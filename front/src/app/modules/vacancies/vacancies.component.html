@@ -1,0 +1,88 @@
+<form [formGroup]="formGroup">
+  <div class="vacancies-topbar">
+    <div class="vacancies-topbar__menu">
+      <ng-container *ngFor="let value of menu">
+        <span
+          class="vacancies-topbar__menu__element"
+          (click)="toggleMenuSection(value)"
+          *ngIf="value !== 'Профиль'"
+          [ngStyle]="
+            menuSection === value
+              ? { 'text-shadow': '#000000 0.8px 0px 0px' }
+              : { 'font-weight': 400 }
+          "
+          >{{ value }}</span
+        >
+        <span
+          class="vacancies-topbar__menu__element"
+          [tuiHint]="profileTooltip"
+          [tuiHintShowDelay]="0"
+          tuiHintAppearance="onDark"
+          [tuiHintHideDelay]="100"
+          *ngIf="value === 'Профиль'"
+          [ngStyle]="
+            menuSection === value
+              ? { 'text-shadow': '#000000 0.8px 0px 0px' }
+              : { 'font-weight': 400 }
+          "
+          >{{ value }}</span
+        >
+      </ng-container>
+    </div>
+
+    <div class="vacancies-topbar__submenu">
+      <span
+        *ngFor="let value of subMenu"
+        class="vacancies-topbar__submenu__element"
+        (click)="toggleSubMenuSection(value)"
+        [ngStyle]="
+          subMenuSection === value
+            ? { background: '#8A52B2', color: 'white' }
+            : { background: '#ffffff', color: 'black' }
+        "
+        >{{ value }}</span
+      >
+    </div>
+
+    <div class="vacancies-topbar__search">
+      <label [tuiTextfieldLabelOutside]="true" class="input-label">
+        <tui-input
+          [tuiTextfieldIcon]="tuiIconSearchLarge"
+          class="vacancies-topbar__search__field"
+          formControlName="searchControl"
+        >
+          <input tuiTextfield />
+        </tui-input>
+      </label>
+    </div>
+  </div>
+
+  <tui-scrollbar style="max-height: 75vh">
+    <tui-loader
+      class="loader"
+      [inheritColor]="true"
+      [overlay]="true"
+      [showLoader]="isLoading"
+    >
+      <ng-container *ngIf="vacancies.length > 0">
+        <app-vacancy
+          *ngFor="let vacancy of vacancies; let index = index"
+          [vacancy]="vacancy"
+        ></app-vacancy>
+      </ng-container>
+    </tui-loader>
+  </tui-scrollbar>
+</form>
+
+<ng-template #profileTooltip>
+  <button
+    iconRight="tuiIconArrowRightCircle"
+    tuiButton
+    appearance="exit_button"
+    type="button"
+    [disabled]="false"
+    (click)="exitProfile()"
+  >
+    Выход
+  </button></ng-template
+>
